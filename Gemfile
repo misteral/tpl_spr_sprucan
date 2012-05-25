@@ -32,7 +32,7 @@ gem 'jquery-rails'
  gem 'unicorn'
 
 # Deploy with Capistrano
- gem 'capistrano'
+
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
@@ -40,11 +40,15 @@ gem 'spree'
 
 group :development, :test do
   gem "rails-erd" #для ERD
-
-end
+  gem 'dark-capistrano-recipes', :git => 'git://github.com/misteral/capistrano-recipes.git'
+  gem 'capistrano'
+  gem 'rvm-capistrano'
+  gem 'capistrano_colors'
+  #gem 'capistrano-unicorn'
+  gem 'net-ssh', :git => 'git://github.com/nessche/net-ssh.git'
+  end
 
 gem 'import_products', :path => '/home/ror/projects/spree-import-products'
 gem 'delayed_job_active_record'
 gem 'russian'
 gem 'spree_i18n', :git => 'git://github.com/misteral/spree_i18n.git'
-gem 'capistrano-recipes', :git => 'git://github.com/webficient/capistrano-recipes.git'
