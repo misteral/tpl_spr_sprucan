@@ -40,7 +40,9 @@ gem 'spree'
 
 group :development, :test do
   gem "rails-erd" #для ERD
-  gem 'dark-capistrano-recipes', :git => 'git://github.com/misteral/capistrano-recipes.git'
+  #gem 'al-capistrano-recipes', :path => '/home/ror/projects/al-capistrano-recipes'
+  gem 'al-capistrano-recipes',:git => 'git://github.com/misteral/al-capistrano-recipes.git'
+  #gem 'dark-capistrano-recipes',:git => 'git://github.com/leifcr/capistrano-recipes.git'
   gem 'capistrano'
   gem 'rvm-capistrano'
   gem 'capistrano_colors'
@@ -48,7 +50,8 @@ group :development, :test do
   gem 'net-ssh', :git => 'git://github.com/nessche/net-ssh.git'
   end
 
-gem 'import_products', :path => '/home/ror/projects/spree-import-products'
+#gem 'import_products', :path => '/home/ror/projects/spree-import-products'
+gem 'import_products', :git => 'git://github.com/misteral/spree-import-products.git'
 gem 'delayed_job_active_record'
 gem 'russian'
 gem 'spree_i18n', :git => 'git://github.com/misteral/spree_i18n.git'

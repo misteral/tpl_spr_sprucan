@@ -8,11 +8,11 @@ require 'capistrano_colors' #разукрасим вывдо capistrano
 
 
 
-server "ror@10.44.33.197", :web, :app, :db, primary: true
+server "ror@192.168.100.5", :web, :app, :db, primary: true
 
 set :rails_env, "production"
 set :user, "ror"
-set :application, "templ_sp"
+set :application, "shopchaiknet"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 #set :use_sudo, true
@@ -22,19 +22,17 @@ set :using_rvm, true
 # set :rvm_ruby_string, "1.9.3-p194-perf@#{application}" # Это указание на то, какой Ruby интерпретатор мы будем использовать.
 set :rvm_type, :user # Указывает на то, что мы будем использовать rvm, установленный у пользователя, от которого происходит деплой, а не системный rvm.
 
-set :server, :unicorn
+set :app_server, :unicorn
 set :web_server, :nginx
+#set :nginx_remote_config, "/etc/nginx/conf.d/site-#{application}.conf"
 
 set :scm, "git"
-set :repository, "git@github.com:mister-al/#{application}.git"
+set :repository, "git@github.com:misteral/tpl_spr.git"
 set :branch, "master"
-
-default_run_options[:pty] = true
-ssh_options[:forward_agent] = true
 
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
 
-require 'capistrano_recipes'
+require 'al-capistrano-recipes'
 
 
 
