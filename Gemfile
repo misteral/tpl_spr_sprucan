@@ -53,7 +53,7 @@ group :development, :test do
   gem 'capistrano_colors'
   #gem 'capistrano-unicorn'
   gem 'net-ssh', :git => 'git://github.com/nessche/net-ssh.git'
-  end
+end
 
 #gem 'import_products', :path => '/home/ror/projects/spree-import-products'
 gem 'import_products', :git => 'git://github.com/misteral/spree-import-products.git'
