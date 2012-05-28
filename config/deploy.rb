@@ -16,6 +16,8 @@ set :user, "ror"
 set :application, "shopchaiknet"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :bundle_cmd, "socksify bundle"
+set :application_uses_ssl, true
+
 #set :deploy_via, :remote_cache
 #set :use_sudo, true
 
