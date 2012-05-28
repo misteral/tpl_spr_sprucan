@@ -56,7 +56,7 @@ group :development, :test do
 end
 
 #gem 'import_products', :path => '/home/ror/projects/spree-import-products'
-gem 'import_products', :git => 'git://github.com/misteral/spree-import-products.git'
+gem 'import_products', :git => 'git://github.com/misteral/spree-import-products.git', :branch => "1.1.x"
 gem 'delayed_job_active_record'
 gem 'russian'
 gem 'spree_i18n', :git => 'git://github.com/misteral/spree_i18n.git'
