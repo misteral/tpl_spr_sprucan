@@ -15,7 +15,7 @@ set :rails_env, "production"
 set :user, "ror"
 set :application, "shopchaiknet"
 set :deploy_to, "/home/#{user}/apps/#{application}"
-set :deploy_via, :remote_cache
+#set :deploy_via, :remote_cache
 #set :use_sudo, true
 
 set :bundle_without, [:test, :development]
