@@ -25,6 +25,8 @@ set :using_rvm, true
 set :rvm_type, :user # Указывает на то, что мы будем использовать rvm, установленный у пользователя, от которого происходит деплой, а не системный rvm.
 
 set :app_server, :unicorn
+set :unicorn_workers, 2
+
 set :web_server, :nginx
 #set :nginx_remote_config, "/etc/nginx/conf.d/site-#{application}.conf"
 
