@@ -8,7 +8,8 @@ require 'capistrano_colors' #разукрасим вывдо capistrano
 
 
 
-server "ror@192.168.100.5", :web, :app, :db, primary: true
+#server "ror@192.168.100.5", :web, :app, :db, primary: true
+server "10.44.33.197", :web, :app, :db, primary: true
 
 set :rails_env, "production"
 set :user, "ror"
