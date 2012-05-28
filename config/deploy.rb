@@ -5,7 +5,7 @@ require 'capistrano_colors' #разукрасим вывдо capistrano
 
 #require 'capistrano/ext/multistage'
 
-
+#load 'deploy/assets'
 
 
 #server "ror@192.168.100.5", :web, :app, :db, primary: true
