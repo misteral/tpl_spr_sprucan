@@ -18,6 +18,7 @@ set :deploy_to, "/home/#{user}/apps/#{application}"
 set :bundle_cmd, "socksify bundle"
 set :application_uses_ssl, true
 
+set :ip_test_server, "10.44.33.197"
 #set :deploy_via, :remote_cache
 #set :use_sudo, true
 
