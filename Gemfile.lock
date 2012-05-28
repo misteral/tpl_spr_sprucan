@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/misteral/al-capistrano-recipes.git
+  revision: f6d2d95a238b8f9f18e3e940fc12f2c6820c919b
+  specs:
+    al-capistrano-recipes (0.0.2)
+      capistrano (>= 2.5.9)
+      capistrano-ext (>= 1.2.1)
+
+GIT
   remote: git://github.com/misteral/spree-import-products.git
   revision: e4bd3b25683050e01083cce2f79981648f9c1d90
   branch: 1.1.x
@@ -23,13 +31,6 @@ GIT
   specs:
     net-ssh (2.5.1)
       jruby-pageant (>= 1.0.2)
-
-PATH
-  remote: /home/ror/projects/al-capistrano-recipes
-  specs:
-    al-capistrano-recipes (0.0.2)
-      capistrano (>= 2.5.9)
-      capistrano-ext (>= 1.2.1)
 
 GEM
   remote: https://rubygems.org/
