@@ -7,6 +7,19 @@ GIT
       capistrano-ext (>= 1.2.1)
 
 GIT
+  remote: git://github.com/misteral/spree-import-products.git
+  revision: 6692ffc338c1858e4cbeffeec4fe47d7d9932f28
+  ref: 6692ffc338c1858e4cbeffeec4fe47d7d9932f28
+  branch: 1.1.x
+  specs:
+    import_products (1.1.1)
+      delayed_job
+      delayed_job_active_record
+      russian
+      spree_auth (~> 1.1.0)
+      spree_core (~> 1.1.0)
+
+GIT
   remote: git://github.com/misteral/spree_i18n.git
   revision: 923c6081925e4926a61b68eaa186c658cfcffba8
   ref: 923c6081925e4926a61b68eaa186c658cfcffba8
@@ -20,16 +33,6 @@ GIT
   specs:
     net-ssh (2.5.1)
       jruby-pageant (>= 1.0.2)
-
-PATH
-  remote: /home/ror/projects/spree-import-products
-  specs:
-    import_products (1.1.1)
-      delayed_job
-      delayed_job_active_record
-      russian
-      spree_auth (~> 1.1.0)
-      spree_core (~> 1.1.0)
 
 GEM
   remote: https://rubygems.org/
