@@ -119,6 +119,7 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffaker (1.12.1)
+    god (0.12.1)
     highline (1.6.11)
     hike (1.2.1)
     httparty (0.8.3)
@@ -285,6 +286,7 @@ DEPENDENCIES
   capistrano_colors
   coffee-rails (~> 3.2.1)
   delayed_job_active_record
+  god
   import_products!
   jquery-rails
   mysql2
