@@ -9,13 +9,13 @@ require 'capistrano_colors' #разукрасим вывдо capistrano
 
 
 #server "ror@192.168.100.5", :web, :app, :db, primary: true
-#server "10.44.33.197:856", :web, :app, :db, primary: true
-server "62.76.186.254:856", :web, :app, :db, primary: true
+server "10.44.33.197:856", :web, :app, :db, primary: true
+#server "62.76.186.254:856", :web, :app, :db, primary: true
 
 set :rails_env, "production"
 set :user, "ror"
 set :application, "shopchaiknet"
-set :deploy_to, "/home/#{user}/apps/#{application}"
+set :deploy_to, "/home/#{user}/apps/#{application} --create"
 set :bundle_cmd, "socksify bundle"
 set :application_uses_ssl, true
 
