@@ -34,6 +34,7 @@ gem 'jquery-rails'
 # Deploy with Capistrano
 group :production do
   gem 'unicorn'
+  gem 'god'
   #gem 'bluepill'
   #gem 'foreman'
 
@@ -45,8 +46,8 @@ gem 'spree'
 
 group :development, :test do
   gem "rails-erd" #для ERD
-  gem 'al-capistrano-recipes', :path => '/home/ror/projects/al-capistrano-recipes'
-  #gem 'al-capistrano-recipes',:git => 'git://github.com/misteral/al-capistrano-recipes.git'
+  #gem 'al-capistrano-recipes', :path => '/home/ror/projects/al-capistrano-recipes'
+  gem 'al-capistrano-recipes',:git => 'git://github.com/misteral/al-capistrano-recipes.git'
   #gem 'dark-capistrano-recipes',:git => 'git://github.com/leifcr/capistrano-recipes.git'
   gem 'capistrano'
   gem 'rvm-capistrano'
@@ -60,3 +61,4 @@ gem 'import_products', :git => 'git://github.com/misteral/spree-import-products.
 gem 'delayed_job_active_record'
 gem 'russian'
 gem 'spree_i18n', :git => 'git://github.com/misteral/spree_i18n.git'
+
