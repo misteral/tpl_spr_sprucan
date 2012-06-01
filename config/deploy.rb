@@ -5,7 +5,7 @@ require 'capistrano_colors' #разукрасим вывдо capistrano
 
 #require 'capistrano/ext/multistage'
 
-#load 'deploy/assets'
+load 'deploy/assets'
 
 
 #server "ror@192.168.100.5", :web, :app, :db, primary: true
@@ -17,7 +17,7 @@ set :user, "ror"
 set :application, "shopchaiknet"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 #set :bundle_cmd, "socksify bundle"
-set :application_uses_ssl, true
+#set :application_uses_ssl, true
 
 #set :ip_test_server, "10.44.33.197"
 set :ip_test_server, ""
@@ -27,7 +27,8 @@ set :server_names, "dev.shop.chaiknet.ru"
 
 set :bundle_without, [:test, :development]
 set :using_rvm, true
-set :rvm_ruby_string, "1.9.3-p194-perf@#{application}" # Это указание на то, какой Ruby интерпретатор мы будем использовать.
+#set :rvm_ruby_string, "1.9.3-p194-perf" # Это указание на то, какой Ruby интерпретатор мы будем использовать.
+set :rvm_ruby_string, "1.9.3-p194-perf@spree" # Это указание на то, какой Ruby интерпретатор мы будем использовать.
 set :rvm_type, :user # Указывает на то, что мы будем использовать rvm, установленный у пользователя, от которого происходит деплой, а не системный rvm.
 
 set :app_server, :unicorn
