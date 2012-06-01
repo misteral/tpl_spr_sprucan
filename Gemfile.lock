@@ -7,19 +7,6 @@ GIT
       capistrano-ext (>= 1.2.1)
 
 GIT
-  remote: git://github.com/misteral/spree-import-products.git
-  revision: 8258e43012cb50dd46e679f6f56ea0d6d6ef6bc7
-  ref: 8258e43012cb50dd46e679f6f56ea0d6d6ef6bc7
-  branch: 1.1.x
-  specs:
-    import_products (1.1.1)
-      delayed_job
-      delayed_job_active_record
-      russian
-      spree_auth (~> 1.1.0)
-      spree_core (~> 1.1.0)
-
-GIT
   remote: git://github.com/misteral/spree_i18n.git
   revision: 923c6081925e4926a61b68eaa186c658cfcffba8
   ref: 923c6081925e4926a61b68eaa186c658cfcffba8
@@ -33,6 +20,16 @@ GIT
   specs:
     net-ssh (2.5.1)
       jruby-pageant (>= 1.0.2)
+
+PATH
+  remote: /home/ror/projects/spree-import-products
+  specs:
+    import_products (1.1.1)
+      delayed_job
+      delayed_job_active_record
+      russian
+      spree_auth (~> 1.1.0)
+      spree_core (~> 1.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -121,7 +118,6 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffaker (1.12.1)
-    god (0.12.1)
     highline (1.6.11)
     hike (1.2.1)
     httparty (0.8.3)
@@ -288,7 +284,6 @@ DEPENDENCIES
   capistrano_colors
   coffee-rails (~> 3.2.1)
   delayed_job_active_record
-  god
   import_products!
   jquery-rails
   mysql2
