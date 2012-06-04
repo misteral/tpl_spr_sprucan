@@ -5,8 +5,6 @@ gem 'rails', '3.2.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
-
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -33,6 +31,7 @@ gem 'jquery-rails'
 
 # Deploy with Capistrano
 group :production do
+  gem 'mysql2'
   gem 'unicorn'
   #gem 'god'
   #gem 'bluepill'
@@ -45,9 +44,10 @@ end
 gem 'spree'
 
 group :development, :test do
+  gem "sqlite3"
   gem "rails-erd" #для ERD
   #gem 'al-capistrano-recipes', :path => '/home/ror/projects/al-capistrano-recipes'
-  gem 'al-capistrano-recipes',:git => 'git://github.com/misteral/al-capistrano-recipes.git'
+  #gem 'al-capistrano-recipes',:git => 'git://github.com/misteral/al-capistrano-recipes.git'
   #gem 'dark-capistrano-recipes',:git => 'git://github.com/leifcr/capistrano-recipes.git'
   gem 'capistrano'
   gem 'rvm-capistrano'
@@ -56,9 +56,9 @@ group :development, :test do
   gem 'net-ssh', :git => 'git://github.com/nessche/net-ssh.git'
 end
 
-#gem 'import_products', :path => '/home/ror/projects/spree-import-products'
-gem 'import_products', :git => 'git://github.com/misteral/spree-import-products.git', :branch => "1.1.x", :ref => "6692ffc338c1858e4cbeffeec4fe47d7d9932f28"
-gem 'delayed_job_active_record'
-gem 'russian'
+gem 'spree_al_import', :path => '/home/ror/projects/spr-import'
+#gem 'import_products', :git => 'git://github.com/misteral/spree-import-products.git', :branch => "1.1.x", :ref => "6692ffc338c1858e4cbeffeec4fe47d7d9932f28"
+#gem 'delayed_job_active_record'
+#gem 'russian'
 gem 'spree_i18n', :git => 'git://github.com/misteral/spree_i18n.git',:ref => "923c6081925e4926a61b68eaa186c658cfcffba8"
 
