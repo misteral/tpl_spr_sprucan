@@ -62,6 +62,7 @@ group :development, :test do
 end
 
 gem 'spree_al_import', :path => '/home/ror/projects/spr-import'
+gem 'import_osc', :path => '/home/ror/projects/import_osc'
 #gem 'import_products', :git => 'git://github.com/misteral/spree-import-products.git', :branch => "1.1.x", :ref => "6692ffc338c1858e4cbeffeec4fe47d7d9932f28"
 #gem 'delayed_job_active_record'
 #gem 'russian'
