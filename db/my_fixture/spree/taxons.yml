@@ -53,10 +53,10 @@ mc_l1_n5:
  rgt: 17
 mc_l1_n6:
  id: 1006
- name: Автолюбителю
+ name: Товары из Индии
  taxonomy: master_categories
  parent_id: 1000
  position: 6
- permalink: categories/auto
+ permalink: categories/india
  lft: 17
  rgt: 18
