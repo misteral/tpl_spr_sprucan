@@ -24,7 +24,7 @@ namespace :spree do
     Spree::Taxon.rebuild!
 
     f = Spree::Taxonomy.all
-    f.each {|r| r.destroy}
+    f.each {|x| x.destroy}
 
 
     puts "Load my_fixtures DB ..."

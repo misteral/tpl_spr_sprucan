@@ -32,12 +32,11 @@ PATH
 PATH
   remote: /home/ror/projects/spree_import_sima
   specs:
-    spree_import_sima (1.1.1)
+    spree_import_sima (1.1.2)
       curb (>= 0.8.0)
       mysql2 (>= 0.3.11)
       nokogiri (>= 1.5.2)
       rmagick (>= 2.13.1)
-      spree_core (~> 1.1.1)
 
 GEM
   remote: https://rubygems.org/
