@@ -67,7 +67,7 @@ gem 'spree_al_import', :git =>'git://github.com/misteral/spr-import.git', :ref =
 #gem 'spree_import_osc', :path => '/home/ror/projects/spree_import_osc'
 gem 'spree_import_osc', :git => 'git://github.com/misteral/importer_spr.git', :ref => "7da51b116c97e60b8a20331ed82b3d1a8cd28cd8"#, :branch => "rails3"
 #gem 'spree_import_sima', :path => '/home/ror/projects/spree_import_sima'
-gem 'spree_import_sima', :git => 'git://github.com/misteral/par_sim.git', :ref => "6ea67b9cba358e1943d0303365a97b62e5028f30", :branch => "lvl3"
+gem 'spree_import_sima', :git => 'git://github.com/misteral/par_sim.git', :ref => "d5f47c13ed188c29c5ace5529dac96a4db085376", :branch => "lvl3"
 
 #gem 'delayed_job_active_record'
 #gem 'russian'
