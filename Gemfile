@@ -76,6 +76,6 @@ gem 'spree_cash_on_delivery', :git => 'git://github.com/misteral/spr_cash.git', 
 
 #gem 'delayed_job_active_record'
 #gem 'russian'
-#gem 'spree_i18n', :git => 'git://github.com/misteral/spree_i18n.git', :ref => "923c6081925e4926a61b68eaa186c658cfcffba8"
-gem 'spree_i18n', :path => '/home/ror/projects/spree_i18n'
+gem 'spree_i18n', :git => 'git://github.com/misteral/spree_i18n.git', :ref => "5e204c0e33ff36c0c84c0fe05a57b7ebee9def26"
+#gem 'spree_i18n', :path => '/home/ror/projects/spree_i18n'
 
