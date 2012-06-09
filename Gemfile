@@ -50,8 +50,8 @@ gem 'spree'
 
 group :development, :test do
   gem "sqlite3"
-  gem "rails-erd" #для ERD
-  gem 'hirb'  #красивые таблицы в irb
+  gem "rails-erd" #for ERD
+  gem 'hirb'  #nice table в irb
   #gem 'al-capistrano-recipes', :path => '/home/ror/projects/al-capistrano-recipes'
   gem 'al-capistrano-recipes',:git => 'git://github.com/misteral/al-capistrano-recipes.git'
   #gem 'dark-capistrano-recipes',:git => 'git://github.com/leifcr/capistrano-recipes.git'
@@ -63,7 +63,7 @@ group :development, :test do
 end
 
 #gem 'spree_al_import', :path => '/home/ror/projects/spr-import'
-gem 'spree_al_import', :git =>'git://github.com/misteral/spr-import.git', :ref => "412c871dd36b352def30698caffdb08773d5b274"
+gem 'spree_al_import', :git =>'git://github.com/misteral/spr-import.git', :ref => "f01d3482d774952e504977e4e92724b34a5c8e27"
 #gem 'spree_import_osc', :path => '/home/ror/projects/spree_import_osc'
 gem 'spree_import_osc', :git => 'git://github.com/misteral/importer_spr.git', :ref => "7da51b116c97e60b8a20331ed82b3d1a8cd28cd8"#, :branch => "rails3"
 #gem 'spree_import_sima', :path => '/home/ror/projects/spree_import_sima'

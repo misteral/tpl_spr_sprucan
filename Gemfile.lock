@@ -30,8 +30,8 @@ GIT
 
 GIT
   remote: git://github.com/misteral/spr-import.git
-  revision: 412c871dd36b352def30698caffdb08773d5b274
-  ref: 412c871dd36b352def30698caffdb08773d5b274
+  revision: f01d3482d774952e504977e4e92724b34a5c8e27
+  ref: f01d3482d774952e504977e4e92724b34a5c8e27
   specs:
     spree_al_import (1.1.2)
       russian (~> 0.6.0)
