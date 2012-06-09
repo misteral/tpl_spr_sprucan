@@ -8,8 +8,8 @@ GIT
 
 GIT
   remote: git://github.com/misteral/importer_spr.git
-  revision: 7da51b116c97e60b8a20331ed82b3d1a8cd28cd8
-  ref: 7da51b116c97e60b8a20331ed82b3d1a8cd28cd8
+  revision: 11ed830d44f9f6889af587a635e91070e394b5a3
+  ref: 11ed830d44f9f6889af587a635e91070e394b5a3
   specs:
     spree_import_osc (1.1.1)
       nokogiri (>= 1.5.2)
@@ -18,8 +18,8 @@ GIT
 
 GIT
   remote: git://github.com/misteral/par_sim.git
-  revision: d5f47c13ed188c29c5ace5529dac96a4db085376
-  ref: d5f47c13ed188c29c5ace5529dac96a4db085376
+  revision: 46d8bb02cdb544d46dc8b76f4436797907eeb7c9
+  ref: 46d8bb02cdb544d46dc8b76f4436797907eeb7c9
   branch: lvl3
   specs:
     spree_import_sima (1.1.2)
@@ -30,8 +30,8 @@ GIT
 
 GIT
   remote: git://github.com/misteral/spr-import.git
-  revision: f01d3482d774952e504977e4e92724b34a5c8e27
-  ref: f01d3482d774952e504977e4e92724b34a5c8e27
+  revision: 9931c92db07a02b2370b139271cf1c8d102d223f
+  ref: 9931c92db07a02b2370b139271cf1c8d102d223f
   specs:
     spree_al_import (1.1.2)
       russian (~> 0.6.0)
