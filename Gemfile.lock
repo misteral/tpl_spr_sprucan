@@ -31,6 +31,21 @@ GIT
       spree_core (~> 1.1.1)
 
 GIT
+  remote: git://github.com/misteral/spr_cash.git
+  revision: 29ddc97780e34059639ceb3f97727529795aa893
+  ref: 29ddc97780e34059639ceb3f97727529795aa893
+  specs:
+    spree_cash_on_delivery (0.1.0)
+      spree_core (>= 1.0.0)
+
+GIT
+  remote: git://github.com/misteral/spr_rbk.git
+  revision: d037f39e091654825dd4830982bf6a149acc27d3
+  ref: d037f39e091654825dd4830982bf6a149acc27d3
+  specs:
+    spree_rbk_checkout (1.1.1)
+
+GIT
   remote: git://github.com/nessche/net-ssh.git
   revision: 21dde273463f5aae11dcad34dfb3feb08dc81375
   specs:
@@ -301,9 +316,11 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   spree
   spree_al_import!
+  spree_cash_on_delivery!
   spree_i18n!
   spree_import_osc!
   spree_import_sima!
+  spree_rbk_checkout!
   sqlite3
   uglifier (>= 1.0.3)
   unicorn
