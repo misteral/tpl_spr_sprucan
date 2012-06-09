@@ -53,7 +53,7 @@ group :development, :test do
   gem "rails-erd" #for ERD
   gem 'hirb'  #nice table в irb
   #gem 'al-capistrano-recipes', :path => '/home/ror/projects/al-capistrano-recipes'
-  gem 'al-capistrano-recipes',:git => 'git://github.com/misteral/al-capistrano-recipes.git'
+  #gem 'al-capistrano-recipes',:git => 'git://github.com/misteral/al-capistrano-recipes.git'
   #gem 'dark-capistrano-recipes',:git => 'git://github.com/leifcr/capistrano-recipes.git'
   gem 'capistrano'
   gem 'rvm-capistrano'
@@ -69,7 +69,13 @@ gem 'spree_import_osc', :git => 'git://github.com/misteral/importer_spr.git', :r
 #gem 'spree_import_sima', :path => '/home/ror/projects/spree_import_sima'
 gem 'spree_import_sima', :git => 'git://github.com/misteral/par_sim.git', :ref => "46d8bb02cdb544d46dc8b76f4436797907eeb7c9", :branch => "lvl3"
 
+#gem 'spree_rbk_checkout', :path => '/home/ror/projects/spree_rbk_checkout'
+gem 'spree_rbk_checkout', :git => 'git://github.com/misteral/spr_rbk.git', :ref => 'd037f39e091654825dd4830982bf6a149acc27d3'
+#gem 'spree_cash_on_delivery', :path => '/home/ror/projects/spree_cash'
+gem 'spree_cash_on_delivery', :git => 'git://github.com/misteral/spr_cash.git', :ref => '29ddc97780e34059639ceb3f97727529795aa893'
+
 #gem 'delayed_job_active_record'
 #gem 'russian'
-gem 'spree_i18n', :git => 'git://github.com/misteral/spree_i18n.git', :ref => "923c6081925e4926a61b68eaa186c658cfcffba8"
+#gem 'spree_i18n', :git => 'git://github.com/misteral/spree_i18n.git', :ref => "923c6081925e4926a61b68eaa186c658cfcffba8"
+gem 'spree_i18n', :path => '/home/ror/projects/spree_i18n'
 

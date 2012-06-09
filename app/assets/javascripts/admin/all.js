@@ -10,3 +10,5 @@
 //= require admin/spree_promo
 
 //= require_tree .
+//= require admin/spree_rbk_checkout
+//= require admin/spree_cash_on_delivery

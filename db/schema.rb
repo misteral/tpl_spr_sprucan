@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120525032745) do
+ActiveRecord::Schema.define(:version => 20120609203228) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -90,6 +90,13 @@ ActiveRecord::Schema.define(:version => 20120525032745) do
     t.string   "calculable_type", :null => false
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+  end
+
+  create_table "spree_cash_on_delivery_transactions", :force => true do |t|
+    t.string   "state"
+    t.decimal  "amount",     :precision => 8, :scale => 2
+    t.datetime "created_at",                               :null => false
+    t.datetime "updated_at",                               :null => false
   end
 
   create_table "spree_configurations", :force => true do |t|
