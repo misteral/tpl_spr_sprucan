@@ -53,7 +53,7 @@ group :development, :test do
   gem "rails-erd" #for ERD
   gem 'hirb'  #nice table в irb
   #gem 'al-capistrano-recipes', :path => '/home/ror/projects/al-capistrano-recipes'
-  #gem 'al-capistrano-recipes',:git => 'git://github.com/misteral/al-capistrano-recipes.git'
+  gem 'al-capistrano-recipes',:git => 'git://github.com/misteral/al-capistrano-recipes.git'
   #gem 'dark-capistrano-recipes',:git => 'git://github.com/leifcr/capistrano-recipes.git'
   gem 'capistrano'
   gem 'rvm-capistrano'
