@@ -51,6 +51,7 @@ gem 'spree'
 group :development, :test do
   gem "sqlite3"
   gem "rails-erd" #для ERD
+  gem 'hirb'  #красивые таблицы в irb
   #gem 'al-capistrano-recipes', :path => '/home/ror/projects/al-capistrano-recipes'
   #gem 'al-capistrano-recipes',:git => 'git://github.com/misteral/al-capistrano-recipes.git'
   #gem 'dark-capistrano-recipes',:git => 'git://github.com/leifcr/capistrano-recipes.git'

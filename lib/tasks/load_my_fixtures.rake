@@ -16,15 +16,23 @@ namespace :spree do
     #Rake::Task['db:migrate'].invoke
     #puts "Seed DB ..."
     #Rake::Task['db:seed'].invoke
+    puts "Flush Russian"
+    Spree::Country.find(168).destroy
+
+
     puts "Flush Taxon and Taxonomies ..."
     #debugger
-    t = Spree::Taxon.all
-    t.each {|r| r.destroy}
 
-    Spree::Taxon.rebuild!
+    Spree::Taxonomy.destroy_all
 
-    f = Spree::Taxonomy.all
-    f.each {|x| x.destroy}
+
+    #Spree::Taxon.rebuild!
+    #
+    #f = Spree::Taxonomy.all
+    #f.each do |x|
+    #  x.destroy
+    #  x.save
+    #end
 
 
     puts "Load my_fixtures DB ..."
@@ -84,9 +92,6 @@ namespace :spree do
         #end
       end
     end
-
-
-
 
   end
 end

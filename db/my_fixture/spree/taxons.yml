@@ -1,29 +1,23 @@
 mc_root:
-  id: 1000
-  name: Categories
-  taxonomy: master_categories
-  permalink: categories
-  position: 0
-  lft: 6
-  rgt: 7
+ id: 1000
+ name: Categories
+ taxonomy: master_categories
+ permalink: categories
+ position: 0
 mc_l1_n1:
-  id: 1001
-  name: Электроника
-  taxonomy: master_categories
-  parent_id: 1000
-  position: 1
-  permalink: categories/electronics
-  lft: 8
-  rgt: 9
+ id: 1001
+ name: Электроника
+ taxonomy: master_categories
+ parent_id: 1000
+ position: 1
+ permalink: categories/electronics
 mc_l1_n2:
-  id: 1002
-  name: Програмное обеспечение
-  taxonomy: master_categories
-  parent_id: 1000
-  position: 2
-  permalink: categories/soft
-  lft: 10
-  rgt: 11
+ id: 1002
+ name: Програмное обеспечение
+ taxonomy: master_categories
+ parent_id: 1000
+ position: 2
+ permalink: categories/soft
 mc_l1_n3:
  id: 1003
  name: Сувениры и подарки
@@ -31,8 +25,6 @@ mc_l1_n3:
  parent_id: 1000
  position: 3
  permalink: categories/presents
- lft: 12
- rgt: 13
 mc_l1_n4:
  id: 1004
  name: Товары для детей
@@ -40,8 +32,6 @@ mc_l1_n4:
  parent_id: 1000
  position: 4
  permalink: categories/for-kids
- lft: 14
- rgt: 15
 mc_l1_n5:
  id: 1005
  name: Туризм и активный отдых
@@ -49,8 +39,6 @@ mc_l1_n5:
  parent_id: 1000
  position: 5
  permalink: categories/turizm
- lft: 16
- rgt: 17
 mc_l1_n6:
  id: 1006
  name: Товары из Индии
@@ -58,5 +46,3 @@ mc_l1_n6:
  parent_id: 1000
  position: 6
  permalink: categories/india
- lft: 17
- rgt: 18
