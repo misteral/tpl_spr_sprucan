@@ -62,11 +62,14 @@ group :development, :test do
   gem 'net-ssh', :git => 'git://github.com/nessche/net-ssh.git'
 end
 
-gem 'spree_al_import', :path => '/home/ror/projects/spr-import'
-gem 'spree_import_osc', :path => '/home/ror/projects/spree_import_osc'
-gem 'spree_import_sima', :path => '/home/ror/projects/spree_import_sima'
-#gem 'import_products', :git => 'git://github.com/misteral/spree-import-products.git', :branch => "1.1.x", :ref => "6692ffc338c1858e4cbeffeec4fe47d7d9932f28"
+#gem 'spree_al_import', :path => '/home/ror/projects/spr-import'
+gem 'spree_al_import', :git =>'git://github.com/misteral/spr-import.git', :ref => "412c871dd36b352def30698caffdb08773d5b274"
+#gem 'spree_import_osc', :path => '/home/ror/projects/spree_import_osc'
+gem 'spree_import_osc', :git => 'git://github.com/misteral/importer_spr.git', :ref => "7da51b116c97e60b8a20331ed82b3d1a8cd28cd8"#, :branch => "rails3"
+#gem 'spree_import_sima', :path => '/home/ror/projects/spree_import_sima'
+gem 'spree_import_sima', :git => 'git://github.com/misteral/par_sim.git', :ref => "6ea67b9cba358e1943d0303365a97b62e5028f30", :branch => "lvl3"
+
 #gem 'delayed_job_active_record'
 #gem 'russian'
-gem 'spree_i18n', :git => 'git://github.com/misteral/spree_i18n.git',:ref => "923c6081925e4926a61b68eaa186c658cfcffba8"
+gem 'spree_i18n', :git => 'git://github.com/misteral/spree_i18n.git', :ref => "923c6081925e4926a61b68eaa186c658cfcffba8"
 
