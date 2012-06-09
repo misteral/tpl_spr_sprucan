@@ -11,6 +11,8 @@ load 'deploy/assets'
 #server "ror@192.168.100.5", :web, :app, :db, primary: true
 #server "10.44.33.197:856", :web, :app, :db, primary: true
 server "62.76.186.254:856", :web, :app, :db, primary: true
+#ssh_options[:port] = 856
+default_run_options[:pty] = true
 
 set :rails_env, "production"
 set :user, "ror"
@@ -27,8 +29,8 @@ set :server_names, "dev.shop.chaiknet.ru"
 
 set :bundle_without, [:test, :development]
 set :using_rvm, true
-#set :rvm_ruby_string, "1.9.3-p194-perf" # Это указание на то, какой Ruby интерпретатор мы будем использовать.
-set :rvm_ruby_string, "1.9.3-p194-perf@spree" # Это указание на то, какой Ruby интерпретатор мы будем использовать.
+set :rvm_ruby_string, "1.9.3-p194-perf" # Это указание на то, какой Ruby интерпретатор мы будем использовать.
+#set :rvm_ruby_string, "1.9.3-p194-perf@spree" # Это указание на то, какой Ruby интерпретатор мы будем использовать.
 set :rvm_type, :user # Указывает на то, что мы будем использовать rvm, установленный у пользователя, от которого происходит деплой, а не системный rvm.
 
 set :app_server, :unicorn
