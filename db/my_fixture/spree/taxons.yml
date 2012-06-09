@@ -1,6 +1,6 @@
 mc_root:
  id: 1000
- name: Categories
+ name: Категории
  taxonomy: master_categories
  permalink: categories
  position: 0
