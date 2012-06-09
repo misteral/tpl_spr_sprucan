@@ -5,14 +5,14 @@ require 'capistrano_colors' #разукрасим вывдо capistrano
 
 #require 'capistrano/ext/multistage'
 
-#load 'deploy/assets'
+load 'deploy/assets'
 
 
 #server "ror@192.168.100.5", :web, :app, :db, primary: true
 #server "10.44.33.197:856", :web, :app, :db, primary: true
 server "62.76.186.254:856", :web, :app, :db, primary: true
 #ssh_options[:port] = 856
-default_run_options[:pty] = true
+#default_run_options[:pty] = true
 
 set :rails_env, "production"
 set :user, "ror"
