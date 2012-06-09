@@ -10,8 +10,8 @@ GIT
 
 GIT
   remote: git://github.com/misteral/par_sim.git
-  revision: 6ea67b9cba358e1943d0303365a97b62e5028f30
-  ref: 6ea67b9cba358e1943d0303365a97b62e5028f30
+  revision: d5f47c13ed188c29c5ace5529dac96a4db085376
+  ref: d5f47c13ed188c29c5ace5529dac96a4db085376
   branch: lvl3
   specs:
     spree_import_sima (1.1.2)
