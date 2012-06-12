@@ -38,7 +38,7 @@ set :unicorn_workers, 2
 
 set :web_server, :nginx
 #set :nginx_remote_config, "/etc/nginx/conf.d/site-#{application}.conf"
-set :nginx_sites_enabled_path, '/opt/nginx_unicorn/conf/sites-enabled'
+#set :nginx_sites_enabled_path, '/opt/nginx_unicorn/conf/sites-enabled'
 set :scm, "git"
 set :repository, "git@github.com:misteral/tpl_spr.git"
 set :branch, "master"
