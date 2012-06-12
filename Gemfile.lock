@@ -1,14 +1,4 @@
 GIT
-  remote: git://github.com/misteral/importer_spr.git
-  revision: 11ed830d44f9f6889af587a635e91070e394b5a3
-  ref: 11ed830d44f9f6889af587a635e91070e394b5a3
-  specs:
-    spree_import_osc (1.1.1)
-      nokogiri (>= 1.5.2)
-      rmagick (>= 2.13.1)
-      spree_core (~> 1.1.1)
-
-GIT
   remote: git://github.com/misteral/par_sim.git
   revision: 46d8bb02cdb544d46dc8b76f4436797907eeb7c9
   ref: 46d8bb02cdb544d46dc8b76f4436797907eeb7c9
@@ -59,6 +49,14 @@ GIT
   specs:
     net-ssh (2.5.1)
       jruby-pageant (>= 1.0.2)
+
+PATH
+  remote: /home/ror/projects/spree_import_osc
+  specs:
+    spree_import_osc (1.1.1)
+      nokogiri (>= 1.5.2)
+      rmagick (>= 2.13.1)
+      spree_core (~> 1.1.1)
 
 GEM
   remote: https://rubygems.org/
