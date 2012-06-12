@@ -1,12 +1,4 @@
 GIT
-  remote: git://github.com/misteral/al-capistrano-recipes.git
-  revision: af6e7b02f7c560898f1f33c22a7f6a5aab563c23
-  specs:
-    al-capistrano-recipes (0.0.3)
-      capistrano (>= 2.12.0)
-      capistrano-ext (>= 1.2.1)
-
-GIT
   remote: git://github.com/misteral/importer_spr.git
   revision: 11ed830d44f9f6889af587a635e91070e394b5a3
   ref: 11ed830d44f9f6889af587a635e91070e394b5a3
@@ -67,6 +59,13 @@ GIT
   specs:
     net-ssh (2.5.1)
       jruby-pageant (>= 1.0.2)
+
+PATH
+  remote: /home/ror/projects/al-capistrano-recipes
+  specs:
+    al-capistrano-recipes (0.0.2)
+      capistrano (>= 2.5.9)
+      capistrano-ext (>= 1.2.1)
 
 GEM
   remote: https://rubygems.org/
@@ -327,7 +326,7 @@ DEPENDENCIES
   rails-erd
   rvm-capistrano
   sass-rails (~> 3.2.3)
-  spree
+  spree (~> 1.1.1)
   spree_al_import!
   spree_cash_on_delivery!
   spree_i18n!

@@ -5,7 +5,7 @@ require 'capistrano_colors' #разукрасим вывдо capistrano
 
 #require 'capistrano/ext/multistage'
 
-load 'deploy/assets'
+#load 'deploy/assets'
 
 
 #server "ror@192.168.100.5", :web, :app, :db, primary: true
@@ -24,7 +24,7 @@ set :deploy_to, "/home/#{user}/apps/#{application}"
 #set :ip_test_server, "10.44.33.197"
 set :ip_test_server, ""
 set :server_names, "dev.shop.chaiknet.ru"
-#set :deploy_via, :remote_cache
+set :deploy_via, :remote_cache
 #set :use_sudo, true
 
 set :bundle_without, [:test, :development]
@@ -38,7 +38,7 @@ set :unicorn_workers, 2
 
 set :web_server, :nginx
 #set :nginx_remote_config, "/etc/nginx/conf.d/site-#{application}.conf"
-
+set :nginx_sites_enabled_path, '/opt/nginx_unicorn/conf/sites-enabled'
 set :scm, "git"
 set :repository, "git@github.com:misteral/tpl_spr.git"
 set :branch, "master"
@@ -49,43 +49,58 @@ require 'al-capistrano-recipes'
 
 
 
-
-namespace :deploy do
-  namespace :assets do
-    task :precompile, :roles => :web, :except => { :no_release => true } do
-      from = source.next_revision(current_revision)
-      if capture("cd #{latest_release} && #{source.local.log(from)} vendor/assets/ app/assets/ | wc -l").to_i > 0
-        run %Q{cd #{latest_release} && #{rake} RAILS_ENV=#{rails_env} #{asset_env} assets:precompile}
-      else
-        logger.info "Skipping asset pre-compilation because there were no asset changes"
-      end
-    end
-  end
-end
-
-
-
-
-
-
-#require 'capistrano-unicorn'
-#role :web, "nginx"                          # Your HTTP server, Apache/etc
-#role :app, "your app-server here"                          # This may be the same as your `Web` server
-#role :db,  "your primary db-server here", :primary => true # This is where Rails migrations will run
-
-
-# if you want to clean up old releases on each deploy uncomment this:
-# after "deploy:restart", "deploy:cleanup"
-
-# if you're still using the script/reaper helper you will need
-# these http://github.com/rails/irs_process_scripts
-
-# If you are using Passenger mod_rails uncomment this:
-# namespace :deploy do
-#   task :start do ; end
-#   task :stop do ; end
-#   task :restart, :roles => :app, :except => { :no_release => true } do
-#     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
-#   end
-# end
+#require 'rubygems'
+#require "bundler/capistrano"
+#require 'rvm/capistrano' # Для работы rvm
+#require 'capistrano_colors' #разукрасим вывдо capistrano
+#
+## =============================================================================
+## GENERAL SETTINGS
+## =============================================================================
+##server "ror@192.168.100.5", :web, :app, :db, primary: true
+##server "10.44.33.197:856", :web, :app, :db, primary: true
+#server "62.76.186.254:856", :web, :app, :db, primary: true
+#
+#set :application,  "chaiknet"
+##set :deploy_to,  "/var/apps/#{application}"
+#set :deploy_via, :remote_cache
+#set :scm, :git
+#set :repository, "git@github.com:misteral/tpl_spr.git"
+#set :git_enable_submodules, 1
+#set :keep_releases, 3
+#set :user, "ror"
+##set :runner, "ror"
+##set :password, "demo567"
+#set :use_sudo, false
+#set :branch, 'master'
+#
+#set :deploy_to, "/home/#{user}/apps/#{application}"
+#
+#set :using_rvm, true
+#set :rvm_ruby_string, "1.9.3-p194-perf" # Это указание на то, какой Ruby интерпретатор мы будем использовать.
+##set :rvm_ruby_string, "1.9.3-p194-perf@spree" # Это указание на то, какой Ruby интерпретатор мы будем использовать.
+#set :rvm_type, :user
+#
+#set :rails_env, "production"
+##set :bundle_without, [:test, :development]
+#
+#set :base_ruby_path, ""
+#
+#
+#ssh_options[:forward_agent] = true
+#ssh_options[:keys] = [File.join(ENV["HOME"], ".ssh", "id_rsa")]
+#ssh_options[:paranoid] = false
+#default_run_options[:pty] = true
+#
+## =============================================================================
+## RECIPE INCLUDES
+## =============================================================================
+#
+#require 'cap_recipes/tasks/nginx_unicorn'
+#require 'cap_recipes/tasks/god'
+#require 'cap_recipes/tasks/mysql'
+## require 'cap_recipes/tasks/memcache'
+## require 'cap_recipes/tasks/juggernaut'
+## require 'cap_recipes/tasks/delayed_job'
+# require 'cap_recipes/tasks/rails'
 
