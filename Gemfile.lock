@@ -1,41 +1,4 @@
 GIT
-  remote: git://github.com/misteral/par_sim.git
-  revision: 46d8bb02cdb544d46dc8b76f4436797907eeb7c9
-  ref: 46d8bb02cdb544d46dc8b76f4436797907eeb7c9
-  branch: lvl3
-  specs:
-    spree_import_sima (1.1.2)
-      curb (>= 0.8.0)
-      mysql2 (>= 0.3.11)
-      nokogiri (>= 1.5.2)
-      rmagick (>= 2.13.1)
-
-GIT
-  remote: git://github.com/misteral/spr-import.git
-  revision: 9931c92db07a02b2370b139271cf1c8d102d223f
-  ref: 9931c92db07a02b2370b139271cf1c8d102d223f
-  specs:
-    spree_al_import (1.1.2)
-      russian (~> 0.6.0)
-      spree_auth (~> 1.1.1)
-      spree_core (~> 1.1.1)
-
-GIT
-  remote: git://github.com/misteral/spr_cash.git
-  revision: 29ddc97780e34059639ceb3f97727529795aa893
-  ref: 29ddc97780e34059639ceb3f97727529795aa893
-  specs:
-    spree_cash_on_delivery (0.1.0)
-      spree_core (>= 1.0.0)
-
-GIT
-  remote: git://github.com/misteral/spr_rbk.git
-  revision: d037f39e091654825dd4830982bf6a149acc27d3
-  ref: d037f39e091654825dd4830982bf6a149acc27d3
-  specs:
-    spree_rbk_checkout (1.1.1)
-
-GIT
   remote: git://github.com/misteral/spree_i18n.git
   revision: 5e204c0e33ff36c0c84c0fe05a57b7ebee9def26
   ref: 5e204c0e33ff36c0c84c0fe05a57b7ebee9def26
@@ -51,12 +14,40 @@ GIT
       jruby-pageant (>= 1.0.2)
 
 PATH
+  remote: /home/ror/projects/spr-import
+  specs:
+    spree_al_import (1.1.2)
+      russian (~> 0.6.0)
+      spree_auth (~> 1.1.1)
+      spree_core (~> 1.1.1)
+
+PATH
+  remote: /home/ror/projects/spree_cash
+  specs:
+    spree_cash_on_delivery (0.1.0)
+      spree_core (>= 1.0.0)
+
+PATH
   remote: /home/ror/projects/spree_import_osc
   specs:
     spree_import_osc (1.1.1)
       nokogiri (>= 1.5.2)
       rmagick (>= 2.13.1)
       spree_core (~> 1.1.1)
+
+PATH
+  remote: /home/ror/projects/spree_import_sima
+  specs:
+    spree_import_sima (1.1.2)
+      curb (>= 0.8.0)
+      mysql2 (>= 0.3.11)
+      nokogiri (>= 1.5.2)
+      rmagick (>= 2.13.1)
+
+PATH
+  remote: /home/ror/projects/spree_rbk_checkout
+  specs:
+    spree_rbk_checkout (1.1.1)
 
 GEM
   remote: https://rubygems.org/
