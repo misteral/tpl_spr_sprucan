@@ -1,0 +1,15 @@
+# This migration comes from spraycan (originally 20110711125527)
+class CreateJavascripts < ActiveRecord::Migration
+  def change
+    create_table :spraycan_javascripts do |t|
+      t.string :name
+      t.text :js
+      t.integer :theme_id
+      t.timestamps
+    end
+
+    Spraycan::Javascript.reset_column_information
+
+    Spraycan::Javascript.create({:name => "application", :js => "", :theme => Spraycan::Theme.active.first}, :without_protection => true)
+  end
+end

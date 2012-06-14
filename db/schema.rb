@@ -11,7 +11,86 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120609203228) do
+ActiveRecord::Schema.define(:version => 20120614172268) do
+
+  create_table "spraycan_files", :force => true do |t|
+    t.string   "file"
+    t.integer  "theme_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "name"
+    t.string   "guid"
+  end
+
+  create_table "spraycan_javascripts", :force => true do |t|
+    t.string   "name"
+    t.text     "js"
+    t.integer  "theme_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "spraycan_packs", :force => true do |t|
+    t.string   "name"
+    t.boolean  "active",                  :default => false
+    t.string   "guid"
+    t.string   "palette_guid"
+    t.text     "preference_hash"
+    t.datetime "created_at",                                 :null => false
+    t.datetime "updated_at",                                 :null => false
+    t.boolean  "gallery",                 :default => false
+    t.text     "palette_preference_hash"
+  end
+
+  create_table "spraycan_packs_themes", :id => false, :force => true do |t|
+    t.integer "pack_id"
+    t.integer "theme_id"
+  end
+
+  create_table "spraycan_palettes", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+    t.boolean  "active",     :default => false
+    t.string   "guid"
+    t.integer  "pack_id"
+  end
+
+  create_table "spraycan_stylesheets", :force => true do |t|
+    t.integer  "theme_id"
+    t.string   "name"
+    t.text     "css"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "spraycan_themes", :force => true do |t|
+    t.string   "name"
+    t.string   "guid"
+    t.boolean  "active",        :default => false
+    t.integer  "position",      :default => 0
+    t.datetime "created_at",                       :null => false
+    t.datetime "updated_at",                       :null => false
+    t.string   "imported_from"
+    t.string   "applies_to"
+    t.integer  "pack_id"
+  end
+
+  create_table "spraycan_view_overrides", :force => true do |t|
+    t.integer  "theme_id"
+    t.string   "virtual_path"
+    t.string   "name"
+    t.string   "replace_with"
+    t.string   "target"
+    t.string   "selector"
+    t.string   "closing_selector"
+    t.boolean  "disabled"
+    t.text     "replacement"
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
+    t.string   "sequence",         :default => "before"
+    t.string   "sequence_target",  :default => ""
+  end
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
