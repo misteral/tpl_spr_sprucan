@@ -28,7 +28,8 @@ gem 'jquery-rails'
 
 # Use unicorn as the app server
 
-gem 'spree', '~> 1.1.1'
+#gem 'spree', '~> 1.1.1'
+gem 'spree', :path => '/home/ror/projects/spree_cash'
 
 # Deploy with Capistrano
 group :production do
@@ -38,11 +39,11 @@ group :production do
   #gem 'bluepill'
   #gem 'foreman'
 
-  #gem 'spree_al_import', :git =>'git://github.com/misteral/spr-import.git', :ref => "9931c92db07a02b2370b139271cf1c8d102d223f"
-  #gem 'spree_import_osc', :git => 'git://github.com/misteral/importer_spr.git', :ref => "11ed830d44f9f6889af587a635e91070e394b5a3"#, :branch => "rails3"
-  #gem 'spree_import_sima', :git => 'git://github.com/misteral/par_sim.git', :ref => "46d8bb02cdb544d46dc8b76f4436797907eeb7c9", :branch => "lvl3"
-  #gem 'spree_rbk_checkout', :git => 'git://github.com/misteral/spr_rbk.git', :ref => 'd037f39e091654825dd4830982bf6a149acc27d3'
-  #gem 'spree_cash_on_delivery', :git => 'git://github.com/misteral/spr_cash.git', :ref => '29ddc97780e34059639ceb3f97727529795aa893'
+  #gem 'spree_al_import', :git =>'git://github.com/misteral/spr-import.git'
+  #gem 'spree_import_osc', :git => 'git://github.com/misteral/importer_spr.git'
+  #gem 'spree_import_sima', :git => 'git://github.com/misteral/par_sim.git'
+  #gem 'spree_rbk_checkout', :git => 'git://github.com/misteral/spr_rbk.git'
+  #gem 'spree_cash_on_delivery', :git => 'git://github.com/misteral/spr_cash.git'
 
 
 end
@@ -73,11 +74,12 @@ group :development, :test do
   gem 'spree_al_import', :path => '/home/ror/projects/spr-import'
   gem 'spree_import_osc', :path => '/home/ror/projects/spree_import_osc'
   gem 'spree_import_sima', :path => '/home/ror/projects/spree_import_sima'
+
   gem 'spree_rbk_checkout', :path => '/home/ror/projects/spree_rbk_checkout'
   gem 'spree_cash_on_delivery', :path => '/home/ror/projects/spree_cash'
 
 end
 
 #gem 'spree_i18n', :path => '/home/ror/projects/spree_i18n'
-gem 'spree_i18n', :git => 'git://github.com/misteral/spree_i18n.git', :ref => "5e204c0e33ff36c0c84c0fe05a57b7ebee9def26"
+gem 'spree_i18n', :git => 'git://github.com/misteral/spree_i18n.git'
 
